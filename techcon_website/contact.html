@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - TechCon 2024</title>
+  <style>
+    /* Simple styles for better layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      padding: 1.5em;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+    button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 0.75em;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Contact Us</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Contact Information -->
+    <section aria-labelledby="contact-info">
+      <h2 id="contact-info">Contact Information</h2>
+      <p>Email us at: <a href="mailto:email@example.com">email@example.com</a></p>
+      <p>Follow us on social media:</p>
+      <ul>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <!-- Map -->
+    <section aria-labelledby="venue-map">
+      <h2 id="venue-map">Conference Venue</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531531706!3d-37.81627974202186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f0f2fdf1%3A0xf577b1bdb8efdb37!2sConference%20Center!5e0!3m2!1sen!2s!4v1632981234567!5m2!1sen!2s" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="TechCon 2024 Venue Location">
+      </iframe>
+    </section>
+
+    <!-- Contact Form -->
+    <section aria-labelledby="contact-form">
+      <h2 id="contact-form">Send Us a Message</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 TechCon. All rights reserved. Copyright.</p>
+  </footer>
+</body>
+</html>
